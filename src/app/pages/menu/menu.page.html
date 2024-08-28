@@ -3,11 +3,16 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>Bienvenido {{ nombre }}</ion-title>
+    <ion-title>Bienvenido {{ Usuario.nombre }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-button color="dark" [routerLink]="['/recetas']">Ir a recetas</ion-button>
-  <ion-button color="primary" [routerLink]="['/inisesion']">Ir a inicio de sesion</ion-button>
+
+  <ion-button color="dark" [routerLink]="['/recetas']">recetario</ion-button>
+
+  <ion-button color="primary" [routerLink]="['/inisesion']">iniciar sesion</ion-button>
+
+  <ion-button color="warning" [routerlink]="['/formulario']">Crear cuenta</ion-button>
+
 </ion-content>

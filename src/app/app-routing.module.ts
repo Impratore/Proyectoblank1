@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'inisesion',
     loadChildren: () => import('./pages/inisesion/inisesion.module').then( m => m.InisesionPageModule)
   },
+  {
+    path: 'formulario',
+    loadChildren: () => import('./pages/formulario/formulario.module').then( m => m.FormularioPageModule)
+  },
 ];
 
 @NgModule({

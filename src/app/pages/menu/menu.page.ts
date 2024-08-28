@@ -7,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuPage implements OnInit {
 
-  nombre: string = "Patricio";
-  apellido: string = "Rodriguez";
-  edad: number = 24;
-
+  Usuario: any = {
+    nombre: 'Patricio',
+    apellido: 'Rodriguez',
+    edad: 24
+  }
 
   constructor() { }
 
