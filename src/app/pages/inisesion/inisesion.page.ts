@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InisesionPage implements OnInit {
 
+  foto = {
+    imagen: 'assets/img/fotoperfil.png'
+  }
+
   constructor() { }
 
   ngOnInit() {
