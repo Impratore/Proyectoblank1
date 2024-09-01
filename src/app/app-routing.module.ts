@@ -27,6 +27,14 @@ const routes: Routes = [
     path: 'formulario',
     loadChildren: () => import('./pages/formulario/formulario.module').then( m => m.FormularioPageModule)
   },
+  {
+    path: 'platos',
+    loadChildren: () => import('./pages/platos/platos.module').then( m => m.PlatosPageModule)
+  },
+  {
+    path: '**',
+    loadChildren: () => import('./pages/inisesion/inisesion.module').then( m => m.InisesionPageModule)
+  },
 ];
 
 @NgModule({

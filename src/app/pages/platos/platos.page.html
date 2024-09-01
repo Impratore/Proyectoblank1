@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>recetas</ion-title>
+    <ion-title>Platos</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -11,14 +11,12 @@
 
   <ion-grid>
     <ion-row>
-      <ion-col size="12" *ngFor="let receta of recetas">
+      <ion-col size="12" *ngFor="let comida of comidas">
         <ion-card>
-          <img [src]="receta.imagen" />
+          <img [src]="comida.imagen" />
           <ion-card-content>
-            <ion-card-title>{{ receta.titulo }}</ion-card-title>
-            <p>{{ receta.ingrediente }}</p>
-            <p>-----------------------------------------------------------------------------</p>
-            <p>{{ receta.preparacion }}</p>
+            <ion-card-title>{{ comida.titulo }}</ion-card-title>
+            <p>{{ comida.descripcion }}</p>
           </ion-card-content>
         </ion-card>
       </ion-col>

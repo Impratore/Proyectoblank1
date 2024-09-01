@@ -13,6 +13,9 @@ ion-content {
       padding: 10px; /* Añade espacio alrededor del párrafo */
       width: 80%; /* Ajusta el ancho del párrafo para que no ocupe todo el ancho */
       text-align: center; /* Alinea el texto del párrafo al centro */
+      color: white;
+      background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con opacidad */
+      border-radius: 5px; /* Esquinas redondeadas del cuadro */
     }
   }
   
