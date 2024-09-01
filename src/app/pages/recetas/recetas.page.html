@@ -11,13 +11,15 @@
 
   <ion-grid>
     <ion-row>
+      <ion-button color="dark">Crea tu propia receta</ion-button>
+      <ion-searchbar placeholder="Busca una receta"></ion-searchbar>
       <ion-col size="12" *ngFor="let receta of recetas">
         <ion-card>
           <img [src]="receta.imagen" />
           <ion-card-content>
             <ion-card-title>{{ receta.titulo }}</ion-card-title>
             <p>{{ receta.ingrediente }}</p>
-            <p>-----------------------------------------------------------------------------</p>
+            <h6>Preparación</h6>
             <p>{{ receta.preparacion }}</p>
           </ion-card-content>
         </ion-card>
