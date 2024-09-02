@@ -21,6 +21,12 @@
         <ion-input label="Contraseña" type="password"></ion-input>
       </ion-item>
 
+      <ion-item lines="none" class="recover-password-container">
+        <ion-text color="primary">
+          <a [routerLink]="['/recuperar-contraseña']">Recuperar contraseña</a>
+        </ion-text>
+      </ion-item>
+
       <ion-item>
         <ion-button color="dark" [routerLink]="['/administracion']">Administracion</ion-button>
       </ion-item>
