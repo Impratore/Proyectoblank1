@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { RecetasPageRoutingModule } from './recetas-routing.module';
 
 import { RecetasPage } from './recetas.page';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RecetasPageRoutingModule
+    RecetasPageRoutingModule,
+    MatProgressSpinnerModule
   ],
   declarations: [RecetasPage]
 })
