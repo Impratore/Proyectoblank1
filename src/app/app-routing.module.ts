@@ -32,6 +32,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/platos/platos.module').then( m => m.PlatosPageModule)
   },
   {
+    path: 'administracion',
+    loadChildren: () => import('./pages/administracion/administracion.module').then( m => m.AdministracionPageModule)
+  },
+  {
     path: '**',
     loadChildren: () => import('./pages/inisesion/inisesion.module').then( m => m.InisesionPageModule)
   },
