@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationExtras, Router } from '@angular/router';
 
 @Component({
   selector: 'app-platos',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./platos.page.scss'],
 })
 export class PlatosPage implements OnInit {
+
+  palabra: string = 'Grandes';
 
   comidas = [
     {
@@ -41,9 +44,19 @@ export class PlatosPage implements OnInit {
     
   ];
 
-  constructor() { }
+  constructor(private router: Router) { }
+
 
   ngOnInit() {
+  }
+
+  mensaje() {
+    let navigationextras: NavigationExtras = {
+      state: {
+        pal: this.palabra
+      }
+    }
+    this.router.navigate(['/recetas'], navigationextras);
   }
 
 }

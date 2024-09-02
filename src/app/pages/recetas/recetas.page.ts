@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-recetas',
   templateUrl: './recetas.page.html',
   styleUrls: ['./recetas.page.scss'],
 })
 export class RecetasPage implements OnInit {
+
+  Palabra: string ="";
 
   recetas = [
     {
@@ -20,12 +22,17 @@ export class RecetasPage implements OnInit {
       ingrediente: '250 gramos de caracoquesos | 2 cucharadas de mantequilla | 2 cucharadas de harina | 250 ml. de leche | 150 gramos de queso | sal y pimienta',
       preparacion: 'Comienza a hervir agua para cocer los caracoquesos, mientras en una olla pon a derretir la mantequilla y pon un diente de ajo triturado, agrega harina y revielve formando una pasta, Agrega la leche de a poco sin dejar de revolver para que no se formen grumos, cuando este caliente agrega el quedo y sazona. Sigue revolviendo hasta que se funda. Con los caracoquesos ya cocidos agrega la salsa, mezcla y ponlo un minuto mas al fuego a caletar y listo'
     }
-    // Agrega más recetas aquí según sea necesario
   ];
 
 
 
-  constructor() { }
+  constructor(private router: Router, private activerouter: ActivatedRoute) { 
+    this.activerouter.queryParams.subscribe(param =>{
+      if(this.router.getCurrentNavigation()?.extras.state){
+        this.Palabra = this.router.getCurrentNavigation()?.extras?.state?.['pal'];
+      }
+    })
+  }
 
   ngOnInit() {
   }
