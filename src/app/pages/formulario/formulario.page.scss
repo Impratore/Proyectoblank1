@@ -1,0 +1,31 @@
+ion-content {
+    --padding-start: 20px;
+    --padding-end: 20px;
+    
+    form {
+      ion-list {
+        ion-item {
+          --padding-bottom: 10px; /* Espacio entre los ítems del formulario */
+        }
+  
+        ion-text { /*Este es el mensaje de error*/
+          p {
+            font-size: 18px; /*Tamaño de las letras*/
+            margin-top: 4px; /*Espacio entre el error y los label*/
+            padding: 0 10px; /* Espacio lateral para alejar los mensajes del borde */
+            text-align: center; /*Sirve para poner alinear el error, con "left" "center" y "right"*/
+          }
+        }
+  
+        /* Centra el botón de crear cuenta */
+        .button-container {
+          display: flex;
+          justify-content: center;
+          ion-button {
+            width: 100%; /* Ajusta el ancho del botón */
+          }
+        }
+      }
+    }
+  }
+  
