@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { ToastController } from '@ionic/angular'; // Importar el ToastController
+import { ToastController } from '@ionic/angular'; // Importar el ToastController este es para el mensajito de si se realizo correctamente
 
 @Component({
   selector: 'app-formulario',
@@ -11,6 +11,11 @@ export class FormularioPage implements OnInit {
 
   formularioRegistro: FormGroup;
 
+  foto = {
+    imagen: 'assets/img/Logo1.png'
+  }
+
+  // Crear el formulario de registro
   constructor(private formBuilder: FormBuilder, private toastController: ToastController) {
     this.formularioRegistro = this.formBuilder.group({
       nombreUsuario: ['', [
@@ -40,7 +45,7 @@ export class FormularioPage implements OnInit {
   // Mostrar mensaje de éxito al crear la cuenta
   async presentToast() {
     const toast = await this.toastController.create({
-      message: 'Cuenta creada exitosamente!',
+      message: '¡Cuenta creada exitosamente!',
       duration: 2000,
       position: 'top',
       color: 'success'
@@ -60,11 +65,13 @@ export class FormularioPage implements OnInit {
     this.formularioRegistro.get('numeroTelefonico')?.setValue(valor, { emitEvent: false });
   }
 
+  // Validar y mostrar los errores de cada campo en el formulario
   esCampoInvalido(campo: string): boolean {
     const control = this.formularioRegistro.get(campo);
     return control ? control.invalid && control.touched : false;
   }
 
+  // Validar y crear la cuenta al presionar el botón "Crear Cuenta"
   crearCuenta() {
     if (this.formularioRegistro.valid) {
       console.log('Formulario válido', this.formularioRegistro.value);

@@ -8,19 +8,24 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-list>
+  <form [formGroup]="formularioIniciarSesion" (ngSubmit)="iniciarSesion()">
     <ion-list>
 
       <img [src]="foto.imagen" alt="200" width="200" class="centered-image"/>
 
       <ion-item>
-        <ion-input label="Correo E-mail" type="email" placeholder="recetario@correo.com"></ion-input>
+        <ion-input formControlName="correo" label="Correo E-mail" type="email" placeholder="recetario@correo.com"></ion-input>
       </ion-item>
-      
+      <ion-text color="danger" *ngIf="esCampoInvalido('correo')">
+        <p>Por favor ingrese un correo válido.</p>
+      </ion-text>
 
       <ion-item>
-        <ion-input label="Contraseña" type="password"></ion-input>
+        <ion-input formControlName="contrasena" label="Contraseña" type="password" placeholder="Contraseña"></ion-input>
       </ion-item>
+      <ion-text color="danger" *ngIf="esCampoInvalido('contrasena')">
+        <p>La contraseña debe tener al menos 8 caracteres, mayúsculas, minúsculas, números y símbolos.</p>
+      </ion-text>
 
       <ion-item lines="none" class="recover-password-container">
         <ion-text color="primary">
@@ -28,14 +33,10 @@
         </ion-text>
       </ion-item>
 
-      <ion-item>
-        <ion-button color="dark" [routerLink]="['/administracion']">Administracion</ion-button>
-      </ion-item>
-
       <ion-item class="button-container">
-        <ion-button color="dark">Iniciar sesión</ion-button>
+        <ion-button color="dark" type="submit">Iniciar sesión</ion-button>
       </ion-item>
 
     </ion-list>
-  </ion-list>
+  </form>
 </ion-content>
