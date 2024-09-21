@@ -8,6 +8,7 @@ import { NavigationExtras, Router } from '@angular/router';
 })
 export class PlatosPage implements OnInit {
 
+  //no sirve, preguntar al profe
   palabra: string = 'Grandes';
 
   comidas = [
@@ -50,6 +51,7 @@ export class PlatosPage implements OnInit {
   ngOnInit() {
   }
 
+  //no sirve, preguntar al profe
   mensaje() {
     let navigationextras: NavigationExtras = {
       state: {

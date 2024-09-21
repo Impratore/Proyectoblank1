@@ -16,4 +16,10 @@ ion-content {
     font-size: 14px; /* Ajusta el tamaño de fuente del mensaje */
     color: #ffffff; /* Cambia el color del texto del mensaje si es necesario */
   }
+  ion-button {
+    margin: 20px auto;
+    display: block;
+    width: 80%;
+    --border-radius: 8px;
+  }
   

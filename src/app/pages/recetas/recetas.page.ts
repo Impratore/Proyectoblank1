@@ -7,6 +7,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class RecetasPage implements OnInit {
 
+  //no sirve, preguntar al profe
   Palabra: string ="";
 
   recetas = [
@@ -21,11 +22,17 @@ export class RecetasPage implements OnInit {
       imagen: 'assets/comidas/caracoquesos.jpg',
       ingrediente: '250 gramos de caracoquesos | 2 cucharadas de mantequilla | 2 cucharadas de harina | 250 ml. de leche | 150 gramos de queso | sal y pimienta',
       preparacion: 'Comienza a hervir agua para cocer los caracoquesos, mientras en una olla pon a derretir la mantequilla y pon un diente de ajo triturado, agrega harina y revielve formando una pasta, Agrega la leche de a poco sin dejar de revolver para que no se formen grumos, cuando este caliente agrega el quedo y sazona. Sigue revolviendo hasta que se funda. Con los caracoquesos ya cocidos agrega la salsa, mezcla y ponlo un minuto mas al fuego a caletar y listo'
+    },
+    {
+      titulo: 'Tallarines con carne molida',
+      imagen: 'assets/comidas/Tallarinesconcarne.jpg',
+      ingrediente: '1 paquete de tallarines | 1 bolsita de salsa de tomate | 1 caja de carne molida | sal y aliño',
+      preparacion: 'Hervir agua en una olla y cuando este hervida colocar los tallarines, esperar a que esten blandos, cuando lo esten, colar para quitar el agua y apartarlos, luego en un sarten, echar aceite y luego la carne molida, revolver la carne mientras se va cocinando, echar condimentos como la sal o echar lo que quieras, es a eleccion, luego de eso, echar la salsa de tomate en la carne molida, despues, verter los tallarines y la carne molida en la olla y revolver y listo'
     }
   ];
 
 
-
+  //no sirve, preguntar al profe
   constructor(private router: Router, private activerouter: ActivatedRoute) { 
     this.activerouter.queryParams.subscribe(param =>{
       if(this.router.getCurrentNavigation()?.extras.state){
