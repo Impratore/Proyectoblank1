@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Perfil de Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card *ngIf="datosUsuario">
+    <ion-card-header>
+      <ion-card-title>{{ datosUsuario.nombreUsuario }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p><strong>Correo:</strong> {{ datosUsuario.correo }}</p>
+      <p><strong>Número Telefónico:</strong> {{ datosUsuario.numeroTelefonico }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

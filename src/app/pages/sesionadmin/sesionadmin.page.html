@@ -1,20 +1,17 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+      <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>Iniciar sesión</ion-title>
+    <ion-title>Iniciar Sesión Administrador</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <form [formGroup]="formularioIniciarSesion" (ngSubmit)="iniciarSesion()">
+  <form [formGroup]="formularioSesionAdmin" (ngSubmit)="iniciarSesion()">
     <ion-list>
-
-      <img [src]="foto.imagen" alt="200" width="200" class="centered-image"/>
-
       <ion-item>
-        <ion-input formControlName="correo" label="Correo E-mail" type="email" placeholder="recetario@correo.com"></ion-input>
+        <ion-input formControlName="correo" label="Correo E-mail" type="email" placeholder="admin@correo.com"></ion-input>
       </ion-item>
       <ion-text color="danger" *ngIf="esCampoInvalido('correo')">
         <p>Por favor ingrese un correo válido.</p>
@@ -27,22 +24,9 @@
         <p>La contraseña debe tener al menos 8 caracteres, mayúsculas, minúsculas, números y símbolos.</p>
       </ion-text>
 
-      <ion-item lines="none" class="recover-password-container">
-        <ion-text color="primary">
-          <a [routerLink]="['/recuperar-contraseña']">Recuperar contraseña</a>
-        </ion-text>
-      </ion-item>
-
-      <ion-item lines="none" class="admin-login-container">
-        <ion-text color="primary">
-          <a [routerLink]="['/sesionadmin']">Iniciar sesión como administrador</a>
-        </ion-text>
-      </ion-item>
-
       <ion-item class="button-container">
         <ion-button color="dark" type="submit">Iniciar sesión</ion-button>
       </ion-item>
-
     </ion-list>
   </form>
 </ion-content>

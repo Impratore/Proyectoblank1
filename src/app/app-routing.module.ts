@@ -36,6 +36,14 @@ const routes: Routes = [
     loadChildren: () => import('./pages/administracion/administracion.module').then( m => m.AdministracionPageModule)
   },
   {
+    path: 'perfil',
+    loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
+  {
+    path: 'sesionadmin',
+    loadChildren: () => import('./pages/sesionadmin/sesionadmin.module').then( m => m.SesionAdminPageModule)
+  },
+  {
     path: '**',
     loadChildren: () => import('./pages/inisesion/inisesion.module').then( m => m.InisesionPageModule)
   },

@@ -74,11 +74,17 @@ export class FormularioPage implements OnInit {
   // Validar y crear la cuenta al presionar el botón "Crear Cuenta"
   crearCuenta() {
     if (this.formularioRegistro.valid) {
-      console.log('Formulario válido', this.formularioRegistro.value);
+      const datosUsuario = this.formularioRegistro.value;
+      
+      // Almacenar los datos en el almacenamiento local
+      localStorage.setItem('usuario', JSON.stringify(datosUsuario));
+  
+      console.log('Formulario válido', datosUsuario);
       this.presentToast(); // Mostrar mensaje de éxito
     } else {
       console.log('Formulario no válido');
       this.formularioRegistro.markAllAsTouched();
     }
   }
+  
 }
