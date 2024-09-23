@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>{{ Palabra }} Recetas</ion-title>
+    <ion-title>Recetas</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -12,8 +12,13 @@
   <ion-grid>
     <ion-row>
       <ion-button color="dark">Crea tu propia receta</ion-button>
-      <ion-searchbar placeholder="Busca una receta"></ion-searchbar>
-      <ion-col size="12" *ngFor="let receta of recetas">
+      
+      <ion-searchbar 
+        placeholder="Busca una receta"
+        (ionInput)="buscarRecetas($event)">
+      </ion-searchbar>
+    
+      <ion-col size="12" *ngFor="let receta of recetasFiltradas">
         <ion-card>
           <img [src]="receta.imagen" />
           <ion-card-content>
@@ -24,6 +29,7 @@
           </ion-card-content>
         </ion-card>
       </ion-col>
+      
     </ion-row>
   </ion-grid>
 
