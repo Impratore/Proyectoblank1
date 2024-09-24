@@ -32,7 +32,31 @@ export class RecetasPage implements OnInit {
       imagen: 'assets/comidas/purepollo2.jpg',
       ingrediente: 'PARA EL PURE: 4 a 5 papas | 1 yema de huevo | 1 chucharada de mantequilla | 1 taza de leche | sal | PARA EL POLLO: 2 filete de pollo | media cebolla | 2 zanahorias | 3 cucharadas de aceite de oliva | 2 dientes ajo picados finitos | 1 taza caldo maggie | media taza de vino blanco | condimentos a gusto',
       preparacion: 'PARA EL PURE: lavar las papas, pelarlas, cortaslas en cubos y cocerlas, luego de cocerlas molerlas y agregar mantequilla, sal, leche y la yema de huevo y mezclar todo. El pollo debe condimentarse a gusto y luego, con el aceite de oliva, en una olla caliente, dorar los filetes por ambos lados y luego retirarlos, agregar a la olla la cebolla cortada en pluma y las zanahorias rebanadas cocinar por unos minutos, luego añadir el pollo previamente dorado, mezclar, añadir orégano y añadir la taza de caldo maggie y el vino, leugo de todo eso, servir todo junto en un plato'
-    }
+    },
+    {
+      titulo: 'Lomo salteado',
+      imagen: 'assets/comidas/lomosaltado.jpg',
+      ingrediente: '1 libra de solomillo de res cortado en rodajas finas | 2 dientes de ajo picados | sal al gusto | pimienta al gusto | 1 taza de arroz blanco regular de grano largo crudo | 2 tazas de papas fritas congeladas | 3 cucharadas de aceite vegetal | 1 cebolla morada pequeña cortada en rodajas gruesas | 2 tomates roma cortados en rodajas gruesas | 2 cucharadas cafeteras de pasta de ají amarillo | 2 cucharadas de salsa de soya | 3 cucharadas de vinagre de vino tinto | 1/3 de taza de caldo de res | 1/2 taza de cilantro picado.',
+      preparacion: 'Cocina el arroz en agua con sal, fríe las papas hasta que estén doradas, en una sartén calienta el aceite y saltea el solomillo con ajo, sal y pimienta, retira la carne'
+    },
+    {
+      titulo: 'Lasaña',
+      imagen: 'assets/comidas/lasaña.jpg',
+      ingrediente: '12 láminas de pasta para lasaña | 500 g de carne molida de res | 1 cebolla picada | 2 dientes de ajo picados | 400 g de salsa de tomate | 1 cucharadita de orégano | 1 cucharadita de albahaca | 200 g de queso mozzarella rallado | 100 g de queso parmesano rallado | 500 ml de salsa bechamel | 2 cucharadas de aceite de oliva | sal al gusto | pimienta al gusto.',
+      preparacion: 'Cocina las láminas de lasaña, sofríe la cebolla y el ajo, añade la carne y cocina hasta dorar, agrega la salsa de tomate, orégano, albahaca, sal y pimienta, cocina a fuego lento por 10-15 minutos, en un molde alterna capas de salsa de carne, láminas de lasaña, salsa bechamel y queso mozzarella, repite hasta terminar con bechamel y queso parmesano, hornea a 180°C por 30-40 minutos, deja reposar antes de servir.'
+    },
+    {
+      titulo: 'Empanada de pino',
+      imagen: 'assets/comidas/empanadadepino.jpg',
+      ingrediente: '500 g de carne molida de res | 1 cebolla grande picada | 2 huevos duros picados | 1/2 taza de aceitunas negras picadas | 1/2 cucharadita de comino | 1/2 cucharadita de orégano | sal al gusto | pimienta al gusto | masa para empanadas | aceite para freír o pintar.',
+      preparacion: 'Sofríe la cebolla hasta dorar, agrega la carne molida y cocina bien, añade comino, orégano, sal y pimienta, cocina por 10 minutos más, deja enfriar el pino, extiende la masa y coloca una porción de pino en el centro, agrega un trozo de huevo duro y una aceituna, cierra la empanada y sella bien los bordes, pinta con aceite o huevo batido, hornea a 180°C por 25-30 minutos o hasta que estén doradas.'
+    },
+    {
+      titulo: 'Sushi frito de pollo',
+      imagen: 'assets/comidas/sushifritodepollo.jpg',
+      ingrediente: '2 tazas de arroz para sushi | 2 1/2 tazas de agua | 1/4 taza de vinagre de arroz | 1 cucharada de azúcar | 1/2 cucharadita de sal | 300 g de pechuga de pollo cocida y desmenuzada | 1/2 taza de mayonesa | 1 cucharada de salsa de soya | 1 cucharadita de wasabi (opcional) | nori (alga para sushi) | aceite para freír | pan rallado para empanizar | salsa teriyaki o salsa de soya para acompañar.',
+      preparacion: 'Cocina el arroz con agua, mezcla el vinagre, azúcar y sal al arroz enfriado, combina el pollo con mayonesa, salsa de soya y wasabi, extiende arroz sobre una hoja de nori, coloca la mezcla de pollo en el centro, enrolla y corta en porciones, empaniza con pan rallado, fríe en aceite caliente hasta dorar, y sirve con salsa teriyaki o salsa de soya.'
+    },
   ];
 
   // Array para las recetas filtradas
