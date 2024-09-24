@@ -57,6 +57,13 @@ export class RecetasPage implements OnInit {
       ingrediente: '2 tazas de arroz para sushi | 2 1/2 tazas de agua | 1/4 taza de vinagre de arroz | 1 cucharada de azúcar | 1/2 cucharadita de sal | 300 g de pechuga de pollo cocida y desmenuzada | 1/2 taza de mayonesa | 1 cucharada de salsa de soya | 1 cucharadita de wasabi (opcional) | nori (alga para sushi) | aceite para freír | pan rallado para empanizar | salsa teriyaki o salsa de soya para acompañar.',
       preparacion: 'Cocina el arroz con agua, mezcla el vinagre, azúcar y sal al arroz enfriado, combina el pollo con mayonesa, salsa de soya y wasabi, extiende arroz sobre una hoja de nori, coloca la mezcla de pollo en el centro, enrolla y corta en porciones, empaniza con pan rallado, fríe en aceite caliente hasta dorar, y sirve con salsa teriyaki o salsa de soya.'
     },
+    {
+      titulo: 'Churrasco chacarero',
+      imagen: 'assets/comidas/chacarero.jpg',
+      ingrediente: '500 g de carne de res | 1 pan francés o marraqueta | 1 tomate en rodajas | 1/2 palta (aguacate) en rodajas | 1/2 cebolla en rodajas finas | 1 ají verde (opcional, en rodajas o tiras) | 1 cucharada de mayonesa (opcional) | sal al gusto | pimienta al gusto | aceite para cocinar la carne..',
+      preparacion: 'Sazona la carne con sal y pimienta, cocina la carne en una sartén con aceite al gusto hasta que esté dorada, retira y deja reposar, corta el pan por la mitad y tuéstalo ligeramente si lo deseas, coloca la carne en el pan, agrega rodajas de tomate, palta, cebolla y ají verde, añade mayonesa si lo prefieres, cierra el sándwich y sirve caliente.'
+
+    },
   ];
 
   // Array para las recetas filtradas
