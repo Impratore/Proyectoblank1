@@ -64,6 +64,25 @@ export class RecetasPage implements OnInit {
       preparacion: 'Sazona la carne con sal y pimienta, cocina la carne en una sartén con aceite al gusto hasta que esté dorada, retira y deja reposar, corta el pan por la mitad y tuéstalo ligeramente si lo deseas, coloca la carne en el pan, agrega rodajas de tomate, palta, cebolla y ají verde, añade mayonesa si lo prefieres, cierra el sándwich y sirve caliente.'
 
     },
+    {
+      titulo: 'Pastel de choclo',
+      imagen: 'assets/comidas/pasteldechoclo.jpg',
+      ingrediente: '6 choclos chilenos| 4 presas de pollo| 150 gramos de posta de vacuno molida o picada| 30 gramos de azúcar granulada| 2 cebollas| 1 taza de leche| 2 dientes de ajo| 8 aceitunas negras| 3 huevos duros| 8 pasas rubias|20 gramos de mantequilla| Aceite de maravilla| Sal| Pimienta negra molida| 1 manojo pequeño de albahaca.',
+      preparacion: 'En una sartén grande, calienta 1 cucharada de aceite de oliva a fuego medio. Agrega 1 cebolla grande picada y 1 pimiento rojo picado, y cocina hasta que estén tiernos (unos 5-7 minutos). Luego, incorpora 500 g de carne molida y cocina hasta que esté dorada, desmenuzando la carne mientras se cocina. Añade sal, pimienta, comino y orégano al gusto, mezclando bien. Agrega 2 huevos duros picados, 1 taza de aceitunas negras picadas y 1 taza de maíz. Remueve y cocina por unos minutos más. Retira del fuego y deja enfriar. En una licuadora, coloca 4 tazas de granos de choclo, 1/2 taza de leche, 2 cucharadas de mantequilla, 1 huevo, 1 cucharada de azúcar (si lo deseas), sal y 1/2 cucharadita de pimienta. Licúa hasta obtener una mezcla suave. Si está muy espesa, agrega un poco más de leche. Precalienta el horno a 180°C (350°F). En un molde para horno, coloca la mezcla de carne como base. Vierte la mezcla de choclo encima, cubriendo el relleno. Lleva al horno y cocina durante aproximadamente 30-40 minutos, o hasta que la parte superior esté dorada y firme al tacto .Una vez listo, deja reposar unos minutos antes de cortar. Sirve caliente.'
+
+    },
+    {
+      titulo: 'Chorrillana',
+      imagen: 'assets/comidas/chorrillana.jpg',
+      ingrediente: '4-5 papas grandes (para hacer las fritas) | 500 g de carne de res (lomo, asado o cualquier carne para guisar), cortada en tiras o trozos pequeños | 1-2 cebollas grandes, cortadas en plumas | 2-4 huevos (opcional) | Aceite (para freír las papas y la carne) | Sal y pimienta (al gusto) | 1 cucharadita de ají de color (pimentón) (opcional) | 1/2 cucharadita de comino (opcional) | Salsa de merquén o ají verde (para acompañar, opcional) | 200 g de chorizo o longaniza, en rodajas (opcional) | Pimientos, cortados en tiras (opcional).',
+      preparacion: 'Pela las papas y córtalas en bastones. Fríelas en harta aceite hasta que queden doradas y crujientes. En la misma sartén, cocina la carne hasta dorarla y sazona con sal, pimienta, ají de color y comino. Retira y sofríe las cebollas hasta que estén tiernas, luego agrega el chorizo (opcional) hasta dorar. Fríe los huevos al gusto. En un plato grande, pon las papas fritas, añade la carne y cebollas, y finaliza con los huevos. Sirve caliente con merquén o ají verde al lado.'
+    },
+    {
+      titulo: 'Charquican',
+      imagen: 'assets/comidas/charquican.jpeg',
+      ingrediente: '400 g de carne (charque, carne de res o pollo), cocida y desmenuzada | 3-4 papas grandes, peladas y cortadas en cubos | 200 g de zapallo (zapallo italiano o butternut), cortado en cubos | 1 cebolla grande, picada en cubos | 1-2 zanahorias, peladas y cortadas en cubos | 2 dientes de ajo, picados (opcional) | 1/2 cucharadita de comino (opcional) | Un puñado de perejil fresco, picado | Aceite (para sofreír) | Sal y pimienta (al gusto) | 2 tazas de caldo de carne o agua (ajustar según la consistencia deseada) | 1 taza de arvejas (frescas o congeladas, opcional) | Huevo duro (para decorar, opcional).',
+      preparacion: 'Calienta aceite en una olla, sofríe la cebolla y el ajo hasta que estén transparentes, añade las zanahorias, papas y zapallo, mezcla bien, agrega la carne desmenuzada y el comino, cocina por unos minutos, vierte caldo o agua suficiente para cubrir, lleva a ebullición, luego reduce el fuego y cocina a fuego lento hasta que las verduras estén tiernas (20-30 minutos), ajusta sal y pimienta, agrega arvejas (si las usas) y cocina por unos minutos más, espolvorea con perejil picado antes de servir y decora con huevo duro (opcional).'
+    },
   ];
 
   // Array para las recetas filtradas
