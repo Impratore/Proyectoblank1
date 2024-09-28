@@ -79,7 +79,7 @@ export class RecetasPage implements OnInit {
     },
     {
       titulo: 'Charquican',
-      imagen: 'assets/comidas/charquican.jpeg',
+      imagen: 'assets/comidas/charquican.jpg',
       ingrediente: '400 g de carne (charque, carne de res o pollo), cocida y desmenuzada | 3-4 papas grandes, peladas y cortadas en cubos | 200 g de zapallo (zapallo italiano o butternut), cortado en cubos | 1 cebolla grande, picada en cubos | 1-2 zanahorias, peladas y cortadas en cubos | 2 dientes de ajo, picados (opcional) | 1/2 cucharadita de comino (opcional) | Un puñado de perejil fresco, picado | Aceite (para sofreír) | Sal y pimienta (al gusto) | 2 tazas de caldo de carne o agua (ajustar según la consistencia deseada) | 1 taza de arvejas (frescas o congeladas, opcional) | Huevo duro (para decorar, opcional).',
       preparacion: 'Calienta aceite en una olla, sofríe la cebolla y el ajo hasta que estén transparentes, añade las zanahorias, papas y zapallo, mezcla bien, agrega la carne desmenuzada y el comino, cocina por unos minutos, vierte caldo o agua suficiente para cubrir, lleva a ebullición, luego reduce el fuego y cocina a fuego lento hasta que las verduras estén tiernas (20-30 minutos), ajusta sal y pimienta, agrega arvejas (si las usas) y cocina por unos minutos más, espolvorea con perejil picado antes de servir y decora con huevo duro (opcional).'
     },

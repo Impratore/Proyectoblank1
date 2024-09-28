@@ -64,7 +64,7 @@ export class PlatosPage implements OnInit {
     },
     {
       titulo: 'Charquican',
-      imagen: 'assets/comidas/charquican.jpeg',
+      imagen: 'assets/comidas/charquican.jpg',
       descripcion: 'Este plato es reconfortante y nutritivo, y se suele servir caliente, a veces acompañado de un huevo frito o una ensalada. El charquicán es conocido por su sabor rústico y su fácil preparación, siendo un favorito en muchas familias chilenas.'
     },
   ];
